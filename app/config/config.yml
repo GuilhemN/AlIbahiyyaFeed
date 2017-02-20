@@ -1,0 +1,14 @@
+imports:
+    - { resource: services.yml }
+
+framework:
+    secret: "ThisIsNotSecret"
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: ~
+    default_locale:  "fr"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    http_method_override: true
+    php_errors:
+        log: true
