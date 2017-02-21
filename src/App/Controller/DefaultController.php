@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use App\FeedGenerator;
-use FeedWriter\ATOM;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 
