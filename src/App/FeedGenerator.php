@@ -22,7 +22,7 @@ class FeedGenerator
             return [
                 'author' => $node->filter('.comment_author')->text(),
                 'comment' => trim($node->filter('.comment_text')->text()),
-                'date' => \DateTime::createFromFormat('d/m/Y', $node->filter('.comment_date')->text()),
+                'date' => \DateTime::createFromFormat('!d/m/Y', $node->filter('.comment_date')->text()),
             ];
         });
 
